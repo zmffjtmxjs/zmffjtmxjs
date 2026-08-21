@@ -24,7 +24,7 @@
 
 | 프로젝트 | 내가 맡은 것 | 스택 | 확인할 수 있는 곳 |
 |---|---|---|---|
-| **LifeQuest** — 일상 퀘스트 앱 (4인) | 퀘스트 도메인 · 완료 API의 동시성과 멱등 설계 | Spring Boot · JPA · Flyway · MySQL 8.4 | [저장소](https://github.com/mahoora0/LifeQuest) · [내 커밋만 보기](https://github.com/mahoora0/LifeQuest/commits?author=zmffjtmxjs) |
+| **LifeQuest** — 일상 퀘스트 앱 (4인) | 퀘스트 도메인 · 완료 API의 동시성과 멱등 설계 | Spring Boot · JPA · Flyway · MySQL 8.4 (앱은 Flutter — 제 담당 아님) | [저장소](https://github.com/mahoora0/LifeQuest) · [내 커밋만 보기](https://github.com/mahoora0/LifeQuest/commits?author=zmffjtmxjs) |
 | **이음(ieum)** — 장애인 활동 지원 매칭 (4인) | 백엔드 · 요청→매칭→활동→리뷰 상태 관리, 신고·차단 도메인 | Spring Boot · Spring Security · JPA · Querydsl · Thymeleaf | 저장소 비공개 (요청 시 제출) |
 | **좌석 예매 티켓팅** (개인) | 전 범위 (진행 중) | Spring Boot · JPA · MySQL · Testcontainers | 저장소 비공개 (요청 시 제출) |
 | **인디게임** (3인, 2023.09–2026.03) | 프로그래밍 단독 — 전투·인벤토리·아이템, 멀티플레이 복제 | Unity → **Unreal Engine 5**(2025 전환) · C++ | 비공개 |
@@ -56,6 +56,7 @@
   한다는 계약을 먼저 고정하고, 중복 판정을 애플리케이션이 아니라 DB UNIQUE 제약에 맡겼습니다.
   1차 캐시가 잠금을 무력화해 경험치가 유실되던 것을 **기댓값 80 대비 실제 30**으로 재현해
   확정하고, 수정 후 **100**을 확인했습니다.
+  ([PR #12](https://github.com/mahoora0/LifeQuest/pull/12) — 결함 내용과 검증 범위를 본문에 남겼습니다)
 - **격리 수준과 락** — 락을 걸기 전에 실행된 일반 조회가 읽는 시점을 먼저 고정해,
   락을 얻은 뒤의 존재 확인까지 과거를 보는 것을 두 세션으로 재현해 확인했습니다.
   **격리 수준과 구현을 바꿨습니다.** 재현 스크립트를 남겨 같은 절차로 다시 확인할 수 있게 했습니다.
