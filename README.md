@@ -27,7 +27,7 @@
 | **LifeQuest** — 일상 퀘스트 앱 (4인) | 퀘스트 도메인 · 완료 API의 동시성과 멱등 설계 | Spring Boot · JPA · Flyway · MySQL 8.4 (앱은 Flutter — 제 담당 아님) | [저장소](https://github.com/mahoora0/LifeQuest) · [내 커밋만 보기](https://github.com/mahoora0/LifeQuest/commits?author=zmffjtmxjs) |
 | **이음(ieum)** — 장애인 활동 지원 매칭 (4인) | 백엔드 · 요청→매칭→활동→리뷰 상태 관리, 신고·차단 도메인 | Spring Boot · Spring Security · JPA · Querydsl · Thymeleaf | [저장소](https://github.com/ligr00vefe/project_ieum) |
 | **좌석 예매 티켓팅** (개인) | 전 범위 (진행 중) | Spring Boot · JPA · MySQL · Testcontainers | 저장소 비공개 (요청 시 제출) |
-| **인디게임** (3인, 2023.09–2026.03) | 프로그래밍 단독 — 전투·인벤토리·아이템, 멀티플레이 복제 | Unity → **Unreal Engine 5**(2025 전환) · C++ | 비공개 |
+| **인디게임** (3인, 2023.09–2026.03) | 프로그래밍 단독 — 전투·인벤토리·아이템, 멀티플레이 복제 | Unity → **Unreal Engine 5**(2023.09 전환 · 코드 2025.01~) · C++ | 비공개 |
 
 ---
 
